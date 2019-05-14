@@ -1,0 +1,32 @@
+@import './basics.scss'
+@import './mixins.sass'
+@import './media_mixins'
+
+body
+  background-color: #0c0c0c
+  background-color: grey
+  color: white
+  font-family: 'Open Sans', sans-serif
+  +phones
+    background-color: pink
+    padding:  30px
+
+html,
+body,
+#root,
+.outer-container
+  height: 100%
+
+.container
+  lost-center: 905px
+  height: 100%
+  background-color: #333
+
+.sidebar
+  display: flex
+  lost-column: 2/7
+  background-color: #202020
+  position: relative
+
+.canvas
+  lost-column: 5/7

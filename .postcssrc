@@ -1,0 +1,10 @@
+{
+  "modules": false,
+  "plugins": {
+    "postcss-custom-media": true,
+    "postcss-media-minmax": true,
+    "postcss-normalize": true,
+    "autoprefixer": true,
+    "lost": true
+  }
+}

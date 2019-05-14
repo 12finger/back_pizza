@@ -1,0 +1,35 @@
+@custom-media --small         (  0px <= width <=  575px);
+@custom-media --medium        (576px <= width <=  992px);
+@custom-media --large         (993px <= width <= 9999px);
+
+@custom-media --medium-and-up (576px <= width <= 9999px);
+@custom-media --up-to-medium  (  0px <= width <=  992px);
+
+@mixin phones {
+  @media (--small) {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media (--medium) {
+    @content;
+  }
+}
+@mixin tablets-and-up {
+  @media (--medium-and-up) {
+    @content;
+  }
+}
+
+@mixin up-to-tablets {
+  @media (--up-to-medium) {
+    @content;
+  }
+}
+
+@mixin desktops {
+  @media (--large) {
+    @content;
+  }
+}
